@@ -1,0 +1,1 @@
+<?php wp_redirect( home_url()."/work/", 301 ); exit; ?>
