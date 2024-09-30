@@ -2,11 +2,11 @@ div.portfolio-entry {
 	margin-bottom: 10px;
 }
 
-h2.portfolio-entry-title { /*remove h2 if this fails */
-	display: none !important;
+.portfolio-featured-image img {
+	aspect-ratio: 16/9;
+	object-fit: cover !important;
 }
 
-.portfolio-featured-image img {
-	aspect-ratio: 16/9; /*how to not skew*/
-	object-fit: cover !important;
+body.home h2.portfolio-entry-title {
+	display: none !important;
 }

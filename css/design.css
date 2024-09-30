@@ -2,15 +2,3 @@
     height: auto;
     width: 230px;
 }
-
-p.wp-block-site-tagline {
-	font-size: smaller;
-}
-
-h2.portfolio-entry-title { /*remove h2 if this fails */
-	display: none !important;
-}
-
-.portfolio-featured-image img {
-	aspect-ratio: 16/9; /*how to not skew*/
-}
