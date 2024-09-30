@@ -2,3 +2,12 @@
     height: auto;
     width: 230px;
 }
+
+.wp-block-post-featured-image {
+	aspect-ratio: 16/9;
+	object-fit: cover !important;
+}
+
+h2.wp-block-post-title {
+	font-size: smaller !important;
+}
