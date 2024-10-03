@@ -12,3 +12,8 @@
 h2.wp-block-post-title {
 	font-size: smaller !important;
 }
+
+.page-id-388 h2.wp-block-post-title,
+.page-id-99 h2.wp-block-post-title {
+	display: none;
+}
