@@ -3,10 +3,11 @@
     width: 230px;
 }
 
-/* Not Working
+/* Not Working - also add colour block
 .wp-block-post-featured-image {
-	aspect-ratio: 16/9;
+	aspect-ratio: 16/9 !important;
 	object-fit: cover !important;
+	overflow: hidden !important;
 }*/
 
 h2.wp-block-post-title {
