@@ -47,6 +47,26 @@ function remove_thefeeds() {
 }
 add_action( 'after_setup_theme','remove_thefeeds', 100 );
 
+//[portvimeo video=""]
+// function that runs when shortcode is called
+function fcn_portvimeo( $atts, $content = null ) {
+	$video = shortcode_atts( array(
+		'video' => '#######',
+	), $atts );
+// Things that you want to do.
+
+$vidcode = $atts['video'];
+$open = '<div class="port-vimeo">
+	<iframe src="https://player.vimeo.com/video/';
+$close = '?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>';
+// Output needs to be return
+return $open.$vidcode.$close;
+}
+// register shortcode
+add_shortcode('portvimeo', 'fcn_portvimeo');
+
 //Remove Dashboard Widgets
 //$wp_meta_boxes['dashboard']['normal']['high']['dashboard_browser_nag']
 //$wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']

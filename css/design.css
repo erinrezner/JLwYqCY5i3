@@ -3,13 +3,6 @@
     width: 230px;
 }
 
-/* Not Working - also add colour block
-.wp-block-post-featured-image {
-	aspect-ratio: 16/9 !important;
-	object-fit: cover !important;
-	overflow: hidden !important;
-}*/
-
 h2.wp-block-post-title {
 	font-size: smaller !important;
 }
@@ -17,4 +10,7 @@ h2.wp-block-post-title {
 .page-id-388 h2.wp-block-post-title,
 .page-id-99 h2.wp-block-post-title {
 	display: none;
+}
+.wp-block-post-navigation-link a {
+    font-size: smaller !important;
 }
