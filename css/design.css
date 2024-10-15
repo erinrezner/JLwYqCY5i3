@@ -5,6 +5,7 @@
 
 h2.wp-block-post-title {
 	font-size: smaller !important;
+	margin-bottom: 25px !important; /* If porttitle feature goes weird, this is why - Does it even worrk? */
 }
 
 .page-id-388 h2.wp-block-post-title,
