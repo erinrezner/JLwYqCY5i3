@@ -47,6 +47,9 @@ function remove_thefeeds() {
 }
 add_action( 'after_setup_theme','remove_thefeeds', 100 );
 
+//high quality thumb
+add_filter('jpeg_quality', function($arg){return 100;});
+
 //[portvimeo video=""]
 // function that runs when shortcode is called
 function fcn_portvimeo( $atts, $content = null ) {
@@ -58,7 +61,7 @@ function fcn_portvimeo( $atts, $content = null ) {
 $vidcode = $atts['video'];
 $open = '<div class="port-vimeo">
 	<iframe src="https://player.vimeo.com/video/';
-$close = '?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
+$close = '?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;maxwidth=1000&amp;maxheight=700" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
 </div>
 <script src="https://player.vimeo.com/api/player.js"></script>';
 // Output needs to be return
