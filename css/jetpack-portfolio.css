@@ -49,3 +49,16 @@ div.portfolio-entry {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+
+/* quickfix - flexbox bar after */
+.headingtext, .headingtext .wp-block-post-title {display: none;}
+@media screen and (min-width: 1140px) {
+	.headingtext {display: block !important;}
+}
+@media screen and (max-width: 1140px) {
+	.headingtext, .headingtext .wp-block-post-title {display: none !important;}
+}
+
+
+
+/* maybe also flexbar vimeo?  can i with iframe? */
