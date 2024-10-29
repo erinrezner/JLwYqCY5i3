@@ -51,9 +51,9 @@ div.portfolio-entry {
 }
 
 /* quickfix - flexbox bar after */
-.headingtext, .headingtext .wp-block-post-title {display: none;}
+.headingtext, /*.headingtext .wp-block-post-title*/ {display: none;}
 @media screen and (min-width: 1140px) {
-	.headingtext {display: block !important;}
+	.headingtext, /*.headingtext .wp-block-post-title*/ {display: block !important;}
 }
 @media screen and (max-width: 1140px) {
 	.headingtext, .headingtext .wp-block-post-title {display: none !important;}

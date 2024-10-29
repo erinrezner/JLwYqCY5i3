@@ -32,6 +32,7 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 //Copyright
 function copyright() { ?>
  <meta name="copyright" content="Copyright (c) Chris Rezner. All Rights Reserved." />
+ <meta http-equiv="refresh" content="300">
 <?php }
 add_action('wp_head', 'copyright');
 
@@ -59,9 +60,9 @@ function fcn_portvimeo( $atts, $content = null ) {
 // Things that you want to do.
 
 $vidcode = $atts['video'];
-$open = '<div class="port-vimeo" style="padding:56.25% 0 0 0;position:relative;">
+$open = '<div class="port-vimeo">
 	<iframe src="https://player.vimeo.com/video/';
-$close = '?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;maxwidth=1000&amp;maxheight=700" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+$close = '?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;maxwidth=1000&amp;maxheight=700" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" class="vim-iframe"></iframe>
 </div>
 <script src="https://player.vimeo.com/api/player.js"></script>';
 // Output needs to be return
